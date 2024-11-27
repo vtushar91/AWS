@@ -1,0 +1,40 @@
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  background-color: grey;
+  color: white;
+}
+
+.head>div{
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.5s ease;
+}
+
+.head>div:hover{
+  color: red;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.secl{
+  width: 50%;
+  background-color: red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secr{
+  width: 50%;
+  background-color: fuchsia;
+  height: 100%;
+}

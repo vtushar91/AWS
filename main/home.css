@@ -1,0 +1,117 @@
+.vtd{
+    height: 6vh;
+    font-size: 1.9em;
+    color: hotpink;
+    text-align: center;
+    animation-name: sliding,slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+}
+body{
+    height: 1400px;
+    margin:0px;
+    background-color: black;
+}
+.nav-bar{
+    width: 100%;
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.logo
+{
+    font-size: 1.5em;
+    margin-left: 35px;
+}
+.links{
+    font-size: 1.5em;
+    width: 55%;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.links :hover{
+    color: gold;
+}
+.links :active{
+    font-weight: bold;
+}
+#home{
+    font-size: 8em;
+    background-color: aqua;
+    height: 85vh;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    color: white;
+}
+.links > a{
+    color: black;
+    text-decoration: none;
+} 
+div > button{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: blue;
+}
+.vis{
+        display: inline;width: 30% ;
+        height:60%;
+        text-align: start;
+        color: white; font-size: 8em;
+        margin-top: 100px;
+        position: absolute;
+        top: 10; left: 20;
+        animation-name: slide;
+        animation-duration: 2s;
+}
+.dub{
+    margin-left:70px;color: rgb(131, 18, 18);
+}
+.train :hover{
+    animation-name: grow;
+    animation-duration: 3s;
+}
+@keyframes slide
+{
+    from{transform: translateX(-100%);}
+}
+@keyframes grow
+{
+    100%{
+        transform: scale(1.2,1.2);
+    }
+}
+@keyframes sliding{
+    from{
+        transform: translateX(200%);
+    }
+}
+.train{
+    position: relative;
+}
+.clk
+{   
+    position: absolute;
+    top: 140px;
+    left:140px;
+    color: black;
+    font-size: 50px;
+}
+.clk :hover{
+    transform: none;
+}
